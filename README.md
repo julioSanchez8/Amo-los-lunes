@@ -1,5 +1,6 @@
 # Amo-los-lunes
-integrantes
-Johan Ovalle
-Hector Deng
-Julio Sanchez
+integrantes:
+<p>Johan Ovalle
+<p>Hector Deng
+<p>Julio Sanchez
+ 
