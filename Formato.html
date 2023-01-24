@@ -5,48 +5,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejemplo</title>
-    <style>
-        .center {
-            text-align: center;
-        }
-        
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50% ;
-            gap: 10px;
-
-            padding: 10px;
-          }
-          
-          .grid-container > div {
-            text-align: center;
-            padding: 20px 0;
-            
-        }
-        table{
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\style.css">
 </head>
 
 <body>
     <h1 class='center'>Resumen mensual de %mes%</h1>
+    
+    <p class="inicio">Viajamos un total de %cantmillas% millas entre todas nuestras entregas, donde el viaje más largo fue de %maslargo% millas y el más corto fue de %mascorto% millas.</p>
+
     <div class="grid-container">
         <div>
-            <h3>Porcentaje de entregas a tiempo</h3>
+            <h3>Entregas a tiempo y tarde</h3>
+            <p>En este mes de %mes%, hicimos un total de %cantentregas% entregas, de las cuales %mesatiempo% estuvieron a tiempo y %mestarde% estuvieron tarde.</p>
             <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\primera.png">
         </div>
         <div>
             <h3>Cantidad de entregas por tiempo de demora</h3>
+            <p>Se entregaron %cantentregastemp1% paquetes temprano, %cantentregastemp2% paquetes con menos de una hora de atraso, %cantentregastemp3% paquetes con de una a tres horas de atraso y %cantentregastemp4% paquetes con más de 3 horas de atraso.</p>
             <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\segunda.png">
         </div>
         <div>
             <h3>Cantidad de entregas por día de la semana</h3>
+            <p>Se entregaron %cantdia1% paquetes el lunes, %cantdia2% paquetes el martes, %cantdia3% paquetes el miércoles, %cantdia4% paquetes el jueves, %cantdia5% paquetes el viernes, %cantdia6% paquetes el sábado y %cantdia7% paquetes el domingo.</p>
             <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\tercera.png">
         </div>
+        <div>
+            <h3>Repartidores</h3>
+            <p>El repartidor con más paquetes entregó %repartmax% paquetes, y el que menos paquetes entregó hizo %repartmin%.</p>
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\mayor-entregas.png">
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\menor-entregas.png">
+        </div>
+        <div>
+            <h3>Entregas</h3>
+            <p>La entrega con menor retraso %mindelay% minutos y la entrega con mayor retraso %maxdelay% minutos.</p>
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\min-max-delay.png">
+        </div>
     </div>
-
-    
 
     <div class="grid-container">
         <div>
@@ -55,14 +49,22 @@
                     <tr>
                         <th>Demora promedio por entrega</th>
                         <th>Distancia promedio recorrida por entrega</th>
+                        <th>Día con más entregas</th>
+                        <th>Día con menos entregas</th>
                     </tr>
                     <tr>
                         <th>%valor1%</th>
                         <th>%valor2%</th>
+                        <th>%valor3%</th>
+                        <th>%valor4%</th>
                     </tr>
                 </table>
             </div>
-            <div>
+            
+    </div>
+
+    <div class="grid-container">
+        <div>
             <p>Ciudades que más envían</p>
             <table>
                 <tr>
@@ -90,11 +92,7 @@
                     <th>%ciudad5cant%</th>
                 </tr>
             </table>
-
         </div>
-    </div>
-
-    <div class="grid-container">
         <div>
             <p>Ciudades que menos envían</p>
             <table>
@@ -124,6 +122,9 @@
                 </tr>
             </table>        
         </div>
+    </div>
+    
+    <div class="grid-container">
         <div>
             <p>Ciudades que más reciben</p>
             <table>
@@ -154,9 +155,6 @@
             </table>
             
         </div>
-    </div>
-    
-    <div class="grid-container">
         <div>
             <p>Ciudades que menos reciben</p>
             <table>
@@ -187,11 +185,7 @@
             </table>
         
         </div>
-        <div>
-            
-        </div>
     </div>
-    
     </body>
 
 </html>

@@ -5,48 +5,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejemplo</title>
-    <style>
-        .center {
-            text-align: center;
-        }
-        
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50% ;
-            gap: 10px;
-
-            padding: 10px;
-          }
-          
-          .grid-container > div {
-            text-align: center;
-            padding: 20px 0;
-            
-        }
-        table{
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\style.css">
 </head>
 
 <body>
     <h1 class='center'>Resumen mensual de Enero</h1>
+    
+    <p class="inicio">Viajamos un total de 5684889 millas entre todas nuestras entregas, donde el viaje más largo fue de 2363 millas y el más corto fue de 133 millas.</p>
+
     <div class="grid-container">
         <div>
-            <h3>Porcentaje de entregas a tiempo</h3>
+            <h3>Entregas a tiempo y tarde</h3>
+            <p>En este mes de Enero, hicimos un total de 8999 entregas, de las cuales 5354 estuvieron a tiempo y 3488 estuvieron tarde.</p>
             <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\primera.png">
         </div>
         <div>
             <h3>Cantidad de entregas por tiempo de demora</h3>
+            <p>Se entregaron 1527 paquetes temprano, 6401 paquetes con menos de una hora de atraso, 885 paquetes con de una a tres horas de atraso y 57 paquetes con más de 3 horas de atraso.</p>
             <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\segunda.png">
         </div>
         <div>
             <h3>Cantidad de entregas por día de la semana</h3>
+            <p>Se entregaron 0 paquetes el lunes, 0 paquetes el martes, 0 paquetes el miércoles, 9468 paquetes el jueves, 17190 paquetes el viernes, 16854 paquetes el sábado y 2695 paquetes el domingo.</p>
             <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\tercera.png">
         </div>
+        <div>
+            <h3>Repartidores</h3>
+            <p>El repartidor con más paquetes entregó 3949 paquetes, y el que menos paquetes entregó hizo 1 entrega.</p>
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\mayor-entregas.png">
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\menor-entregas.png">
+        </div>
+        <div>
+            <h3>Entregas</h3>
+            <p>La entrega con menor retraso se adelanto 10 minutos y la entrega con mayor retraso se tardo 508 minutos.</p>
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\min-max-delay.png">
+        </div>
     </div>
-
-    
 
     <div class="grid-container">
         <div>
@@ -55,14 +49,22 @@
                     <tr>
                         <th>Demora promedio por entrega</th>
                         <th>Distancia promedio recorrida por entrega</th>
+                        <th>Día con más entregas</th>
+                        <th>Día con menos entregas</th>
                     </tr>
                     <tr>
                         <th>21.5 minutos</th>
                         <th>631.7 millas</th>
+                        <th>4</th>
+                        <th>6</th>
                     </tr>
                 </table>
             </div>
-            <div>
+            
+    </div>
+
+    <div class="grid-container">
+        <div>
             <p>Ciudades que más envían</p>
             <table>
                 <tr>
@@ -90,11 +92,7 @@
                     <th>345</th>
                 </tr>
             </table>
-
         </div>
-    </div>
-
-    <div class="grid-container">
         <div>
             <p>Ciudades que menos envían</p>
             <table>
@@ -124,6 +122,9 @@
                 </tr>
             </table>        
         </div>
+    </div>
+    
+    <div class="grid-container">
         <div>
             <p>Ciudades que más reciben</p>
             <table>
@@ -154,9 +155,6 @@
             </table>
             
         </div>
-    </div>
-    
-    <div class="grid-container">
         <div>
             <p>Ciudades que menos reciben</p>
             <table>
@@ -187,11 +185,7 @@
             </table>
         
         </div>
-        <div>
-            
-        </div>
     </div>
-    
     </body>
 
 </html>
