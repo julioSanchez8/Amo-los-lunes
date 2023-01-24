@@ -1,136 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Ejemplo</title>
-</head>
-<body>
-    <h1>Resumen mensual de %mes%</h1>
-    <h3>Porcentaje de entregas a tiempo</h3>
-    <img src="./primera.png">
-    <h3>Cantidad de entregas por tiempo de demora</h3>
-    <img src="./segunda.png">
-    <h3>Cantidad de entregas por día de la semana</h3>
-    <img src="./tercera.png">
+    <style>
+        .center {
+            text-align: center;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50% ;
+            gap: 10px;
 
-    <p>Datos Generales:</p>
-    <table>
-        <tr>
-            <th>Demora promedio por entrega</th>
-            <th>Distancia promedio recorrida por entrega</th>
-        </tr>
-        <tr>
-            <th>%valor1%</th>
-            <th>%valor2%</th>
-        </tr>
-    </table>
-    <p>Ciudades que más envían</p>
-    <table>
-        <tr>
-            <th>Ciudad</th>
-            <th>Envios</th>
-        </tr>
-        <tr>
-            <th>%ciudad1%</th>
-            <th>%ciudad1cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad2%</th>
-            <th>%ciudad2cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad3%</th>
-            <th>%ciudad3cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad4%</th>
-            <th>%ciudad4cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad5%</th>
-            <th>%ciudad5cant%</th>
-        </tr>
-    </table>
-    <p>Ciudades que menos envían</p>
-    <table>
-        <tr>
-            <th>Ciudad</th>
-            <th>Envios</th>
-        </tr>
-        <tr>
-            <th>%ciudad6%</th>
-            <th>%ciudad6cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad7%</th>
-            <th>%ciudad7cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad8%</th>
-            <th>%ciudad8cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad9%</th>
-            <th>%ciudad9cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad10%</th>
-            <th>%ciudad10cant%</th>
-        </tr>
-    </table>
-    <p>Ciudades que más reciben</p>
-    <table>
-        <tr>
-            <th>Ciudad</th>
-            <th>Envios</th>
-        </tr>
-        <tr>
-            <th>%ciudad11%</th>
-            <th>%ciudad11cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad12%</th>
-            <th>%ciudad12cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad13%</th>
-            <th>%ciudad13cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad14%</th>
-            <th>%ciudad14cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad15%</th>
-            <th>%ciudad15cant%</th>
-        </tr>
-    </table>
-    <p>Ciudades que menos reciben</p>
-    <table>
-        <tr>
-            <th>Ciudad</th>
-            <th>Envios</th>
-        </tr>
-        <tr>
-            <th>%ciudad16%</th>
-            <th>%ciudad16cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad17%</th>
-            <th>%ciudad17cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad18%</th>
-            <th>%ciudad18cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad19%</th>
-            <th>%ciudad19cant%</th>
-        </tr>
-        <tr>
-            <th>%ciudad20%</th>
-            <th>%ciudad20cant%</th>
-        </tr>
-    </table>
-</body>
+            padding: 10px;
+          }
+          
+          .grid-container > div {
+            text-align: center;
+            padding: 20px 0;
+            
+        }
+        table{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class='center'>Resumen mensual de %mes%</h1>
+    <div class="grid-container">
+        <div>
+            <h3>Porcentaje de entregas a tiempo</h3>
+            <img src="./primera.png">
+        </div>
+        <div>
+            <h3>Cantidad de entregas por tiempo de demora</h3>
+            <img src="./segunda.png">
+        </div>
+    </div>
+
+    
+
+    <div class="grid-container">
+        <div>
+            <p>Datos Generales:</p>
+            <table>
+                    <tr>
+                        <th>Demora promedio por entrega</th>
+                        <th>Distancia promedio recorrida por entrega</th>
+                    </tr>
+                    <tr>
+                        <th>%valor1%</th>
+                        <th>%valor2%</th>
+                    </tr>
+                </table>
+            </div>
+            <div>
+            <p>Ciudades que más envían</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Envios</th>
+                </tr>
+                <tr>
+                    <th>%ciudad1%</th>
+                    <th>%ciudad1cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad2%</th>
+                    <th>%ciudad2cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad3%</th>
+                    <th>%ciudad3cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad4%</th>
+                    <th>%ciudad4cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad5%</th>
+                    <th>%ciudad5cant%</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div>
+            <p>Ciudades que menos envían</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Envios</th>
+                </tr>
+                <tr>
+                    <th>%ciudad6%</th>
+                    <th>%ciudad6cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad7%</th>
+                    <th>%ciudad7cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad8%</th>
+                    <th>%ciudad8cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad9%</th>
+                    <th>%ciudad9cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad10%</th>
+                    <th>%ciudad10cant%</th>
+                </tr>
+            </table>        
+        </div>
+        <div>
+            <p>Ciudades que más reciben</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Envios</th>
+                </tr>
+                <tr>
+                    <th>%ciudad11%</th>
+                    <th>%ciudad11cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad12%</th>
+                    <th>%ciudad12cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad13%</th>
+                    <th>%ciudad13cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad14%</th>
+                    <th>%ciudad14cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad15%</th>
+                    <th>%ciudad15cant%</th>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    
+    <div class="grid-container">
+        <div>
+            <p>Ciudades que menos reciben</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Envios</th>
+                </tr>
+                <tr>
+                    <th>%ciudad16%</th>
+                    <th>%ciudad16cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad17%</th>
+                    <th>%ciudad17cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad18%</th>
+                    <th>%ciudad18cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad19%</th>
+                    <th>%ciudad19cant%</th>
+                </tr>
+                <tr>
+                    <th>%ciudad20%</th>
+                    <th>%ciudad20cant%</th>
+                </tr>
+            </table>
+        
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    
+    </body>
+
 </html>
