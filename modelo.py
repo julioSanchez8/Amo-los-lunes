@@ -1,6 +1,8 @@
 import pandas as pd
 from sklearn.svm import SVC
 from sklearn import metrics
+from sklearn.model_selection import train_test_split
+import numpy as np
 # import matplotlib.pyplot as plt
 
 # Cargar los datos en un DataFrame
@@ -14,15 +16,15 @@ df = df.drop_duplicates() # eliminar duplicados
 x = df[['Actual_Shipment_Time', 'Shipment_Delay', 'Distance']]
 y = df['Delivery_Status']
 
-x_train = x.head(4000)
-y_train = y.head(4000)
-svm = SVC(kernel = 'rbf', probability=True, gamma='scale')
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3) # 70% training and 30% test
+svm = SVC(kernel = 'linear', probability=True, gamma='scale')
 
 svm.fit(x_train,y_train)
 
-x_pred = x.iloc[5000]
+output = svm.predict(x_test)
 
-output = svm.predict([x_pred])
-print(y.iloc[5000])
-print(svm.classes_)
-print("probabilities:", svm.predict_proba([x_pred]))
+
+print("exactitud:",metrics.accuracy_score(y_test, output))
+print("probabilidades:", svm.predict_proba(x_test))
+print("Precision:",metrics.precision_score(y_test, output))
+
