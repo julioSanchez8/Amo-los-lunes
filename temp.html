@@ -1,136 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <title>Ejemplo</title>
-</head>
-<body>
-    <h1>Resumen mensual de Febrero</h1>
-    <h3>Porcentaje de entregas a tiempo</h3>
-    <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\primera.png">
-    <h3>Cantidad de entregas por tiempo de demora</h3>
-    <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\segunda.png">
-    <h3>Cantidad de entregas por día de la semana</h3>
-    <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\tercera.png">
+    <style>
+        .center {
+            text-align: center;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50% ;
+            gap: 10px;
 
-    <p>Datos Generales:</p>
-    <table>
-        <tr>
-            <th>Demora promedio por entrega</th>
-            <th>Distancia promedio recorrida por entrega</th>
-        </tr>
-        <tr>
-            <th>21.5 minutos</th>
-            <th>631.7 millas</th>
-        </tr>
-    </table>
-    <p>Ciudades que más envían</p>
-    <table>
-        <tr>
-            <th>Ciudad</th>
-            <th>Envios</th>
-        </tr>
-        <tr>
-            <th>LAS</th>
-            <th>684</th>
-        </tr>
-        <tr>
-            <th>MDW</th>
-            <th>638</th>
-        </tr>
-        <tr>
-            <th>PHX</th>
-            <th>560</th>
-        </tr>
-        <tr>
-            <th>OAK</th>
-            <th>404</th>
-        </tr>
-        <tr>
-            <th>MCO</th>
-            <th>345</th>
-        </tr>
-    </table>
-    <p>Ciudades que menos envían</p>
-    <table>
-        <tr>
-            <th>Ciudad</th>
-            <th>Envios</th>
-        </tr>
-        <tr>
-            <th>CRP</th>
-            <th>9</th>
-        </tr>
-        <tr>
-            <th>HRL</th>
-            <th>20</th>
-        </tr>
-        <tr>
-            <th>IAD</th>
-            <th>23</th>
-        </tr>
-        <tr>
-            <th>JAN</th>
-            <th>26</th>
-        </tr>
-        <tr>
-            <th>GEG</th>
-            <th>31</th>
-        </tr>
-    </table>
-    <p>Ciudades que más reciben</p>
-    <table>
-        <tr>
-            <th>Ciudad</th>
-            <th>Envios</th>
-        </tr>
-        <tr>
-            <th>LAS</th>
-            <th>665</th>
-        </tr>
-        <tr>
-            <th>MDW</th>
-            <th>585</th>
-        </tr>
-        <tr>
-            <th>PHX</th>
-            <th>540</th>
-        </tr>
-        <tr>
-            <th>BWI</th>
-            <th>459</th>
-        </tr>
-        <tr>
-            <th>OAK</th>
-            <th>393</th>
-        </tr>
-    </table>
-    <p>Ciudades que menos reciben</p>
-    <table>
-        <tr>
-            <th>Ciudad</th>
-            <th>Envios</th>
-        </tr>
-        <tr>
-            <th>CRP</th>
-            <th>9</th>
-        </tr>
-        <tr>
-            <th>JAN</th>
-            <th>20</th>
-        </tr>
-        <tr>
-            <th>AMA</th>
-            <th>23</th>
-        </tr>
-        <tr>
-            <th>HRL</th>
-            <th>23</th>
-        </tr>
-        <tr>
-            <th>MAF</th>
-            <th>26</th>
-        </tr>
-    </table>
-</body>
+            padding: 10px;
+          }
+          
+          .grid-container > div {
+            text-align: center;
+            padding: 20px 0;
+            
+        }
+        table{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class='center'>Resumen mensual de Enero</h1>
+    <div class="grid-container">
+        <div>
+            <h3>Porcentaje de entregas a tiempo</h3>
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\primera.png">
+        </div>
+        <div>
+            <h3>Cantidad de entregas por tiempo de demora</h3>
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\segunda.png">
+        </div>
+        <div>
+            <h3>Cantidad de entregas por día de la semana</h3>
+            <img src="C:\Users\Johan\Documents\Samsung\Amo-los-lunes\tercera.png">
+        </div>
+    </div>
+
+    
+
+    <div class="grid-container">
+        <div>
+            <p>Datos Generales:</p>
+            <table>
+                    <tr>
+                        <th>Demora promedio por entrega</th>
+                        <th>Distancia promedio recorrida por entrega</th>
+                    </tr>
+                    <tr>
+                        <th>21.5 minutos</th>
+                        <th>631.7 millas</th>
+                    </tr>
+                </table>
+            </div>
+            <div>
+            <p>Ciudades que más envían</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Envios</th>
+                </tr>
+                <tr>
+                    <th>LAS</th>
+                    <th>684</th>
+                </tr>
+                <tr>
+                    <th>MDW</th>
+                    <th>638</th>
+                </tr>
+                <tr>
+                    <th>PHX</th>
+                    <th>560</th>
+                </tr>
+                <tr>
+                    <th>OAK</th>
+                    <th>404</th>
+                </tr>
+                <tr>
+                    <th>MCO</th>
+                    <th>345</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div>
+            <p>Ciudades que menos envían</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Envios</th>
+                </tr>
+                <tr>
+                    <th>CRP</th>
+                    <th>9</th>
+                </tr>
+                <tr>
+                    <th>HRL</th>
+                    <th>20</th>
+                </tr>
+                <tr>
+                    <th>IAD</th>
+                    <th>23</th>
+                </tr>
+                <tr>
+                    <th>JAN</th>
+                    <th>26</th>
+                </tr>
+                <tr>
+                    <th>GEG</th>
+                    <th>31</th>
+                </tr>
+            </table>        
+        </div>
+        <div>
+            <p>Ciudades que más reciben</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Envios</th>
+                </tr>
+                <tr>
+                    <th>LAS</th>
+                    <th>665</th>
+                </tr>
+                <tr>
+                    <th>MDW</th>
+                    <th>585</th>
+                </tr>
+                <tr>
+                    <th>PHX</th>
+                    <th>540</th>
+                </tr>
+                <tr>
+                    <th>BWI</th>
+                    <th>459</th>
+                </tr>
+                <tr>
+                    <th>OAK</th>
+                    <th>393</th>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    
+    <div class="grid-container">
+        <div>
+            <p>Ciudades que menos reciben</p>
+            <table>
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Envios</th>
+                </tr>
+                <tr>
+                    <th>CRP</th>
+                    <th>9</th>
+                </tr>
+                <tr>
+                    <th>JAN</th>
+                    <th>20</th>
+                </tr>
+                <tr>
+                    <th>AMA</th>
+                    <th>23</th>
+                </tr>
+                <tr>
+                    <th>HRL</th>
+                    <th>23</th>
+                </tr>
+                <tr>
+                    <th>MAF</th>
+                    <th>26</th>
+                </tr>
+            </table>
+        
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    
+    </body>
+
 </html>
